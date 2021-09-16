@@ -1,4 +1,4 @@
-# PandaDoc endpoint
+# Pipeline endpoint
 
 ## Overview
 
