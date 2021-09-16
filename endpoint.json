@@ -1,0 +1,62 @@
+{
+    "label": "Pipeline",
+    "name": "pipeline",
+    "apiVersion": "v1",
+    "internal": false,
+    "configurationType": "GLOBAL",
+    "deployment": {
+        "profiles":[
+            {
+                "name": "default",
+                "label": "Default",
+                "memory": 256,
+                "description": "Default configuration"
+            }
+        ],
+        "allowMultipleInstances": true
+    },
+    "icon48": "https://storage.googleapis.com/static.slingrs.io/platform/endpoints/pandadoc.png",
+    "configurationHelpUrl": "/endpoints_pipeline.html#configuration",
+    "status": "ACTIVE",
+    "stores": [],
+    "events": [
+        {
+            "label": "Webhook",
+            "name": "webhook",
+            "description": "Event triggered when there is a webhook coming from PandaDoc."
+        }
+    ],
+    "functions": [
+        {
+            "label": "GET",
+            "name": "_get"
+        },
+        {
+            "label": "POST",
+            "name": "_post"
+        }
+    ],
+    "scripts":[
+        "pipeline-fn-helpers.js"
+    ],
+    "configuration":[
+        {
+            "name": "apiKey",
+            "label": "API Key",
+            "type": "text",
+            "required": "@config.authenticationMethod == 'apiKey'"
+        },
+        {
+            "name": "appKey",
+            "label": "APP Key",
+            "type": "text",
+            "required": "@config.authenticationMethod == 'appKey'"
+        },
+        {
+            "name": "webhook",
+            "label": "Webhook URL",
+            "type": "label",
+            "value": "config.WEBHOOK_URL"
+        }
+    ]
+}
