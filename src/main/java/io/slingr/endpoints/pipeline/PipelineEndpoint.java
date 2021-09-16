@@ -88,5 +88,6 @@ public class PipelineEndpoint extends HttpEndpoint {
             headers.set("Accept", "application/json");
         }
         body.set("headers", headers);
+        
     }
 }
