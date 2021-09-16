@@ -50,9 +50,6 @@ public class PipelineEndpoint extends HttpEndpoint {
         Json body = request.getJsonParams();
         String path = body.string("path");
         path = path + "/?api_key=" + apiKey + "&app_key=" + appKey;
-        System.out.println("--------------------------------------------------------------------------------------------");
-        System.out.println("Esto es path: " + path);
-        System.out.println("--------------------------------------------------------------------------------------------");
         body.set("path", path);
         return defaultGetRequest(request);
     }
@@ -88,6 +85,6 @@ public class PipelineEndpoint extends HttpEndpoint {
             headers.set("Accept", "application/json");
         }
         body.set("headers", headers);
-        
+
     }
 }
