@@ -10,7 +10,7 @@
 var urlsData = {
 	"get": {
 		"companies.list": {
-			"0": "/companies"
+			"0": "/companies/"
 		},
 		"companies.retrieve": {
 			"1": "/companies/:id"
