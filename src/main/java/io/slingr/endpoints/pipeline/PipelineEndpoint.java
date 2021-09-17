@@ -18,7 +18,7 @@ import org.slf4j.LoggerFactory;
  *
  * Created by dgaviola on 10/25/17.
  */
-@SlingrEndpoint(name = "pipeline", functionPrefix = "_")
+@SlingrEndpoint(name = "pipelinecrm", functionPrefix = "_")
 public class PipelineEndpoint extends HttpEndpoint {
 
     private static final Logger logger = LoggerFactory.getLogger(PipelineEndpoint.class);
