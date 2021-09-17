@@ -1439,6 +1439,7 @@ endpoint.users.update = {};
 
 endpoint.get = function(url, options) {
     var options = checkHttpOptions(url, options);
+	sys.logs.info('Going through method .get');
     return endpoint._get(options);
 };
 
