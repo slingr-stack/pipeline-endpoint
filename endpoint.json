@@ -1,6 +1,6 @@
 {
     "label": "Pipeline",
-    "name": "pipelinecrm",
+    "name": "pipeline",
     "apiVersion": "v1",
     "internal": false,
     "configurationType": "GLOBAL",
