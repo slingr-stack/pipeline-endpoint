@@ -47,9 +47,11 @@ public class PipelineEndpoint extends HttpEndpoint {
 
     @EndpointFunction(name = "_get")
     public Json get(FunctionRequest request) {
+        appLogger.info("Enters to _get");
         Json body = request.getJsonParams();
         String path = body.string("path");
         path = path + "/?api_key=" + apiKey + "&app_key=" + appKey;
+        appLogger.info(path);
         body.set("path", path);
         return defaultGetRequest(request);
     }
