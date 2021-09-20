@@ -6,7 +6,7 @@
     <artifactId>pipelinecrm</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>SLINGR - Pipeline Endpoint</name>
+    <name>SLINGR - Pipeline CRM Endpoint</name>
     <packaging>jar</packaging>
 
     <properties>
@@ -35,7 +35,7 @@
         <project.build.s3-wagon.version>3.3</project.build.s3-wagon.version>
         <project.build.shade.version>2.4.1</project.build.shade.version>
         <!-- Other properties -->
-        <build.main-class>io.slingr.endpoints.pipeline.Runner</build.main-class>
+        <build.main-class>io.slingr.endpoints.pipelinecrm.Runner</build.main-class>
     </properties>
 
     <dependencies>
