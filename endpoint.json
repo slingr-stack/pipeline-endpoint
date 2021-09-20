@@ -1,6 +1,6 @@
 {
     "label": "Pipeline",
-    "name": "pipelinecrm",
+    "name": "pipeline",
     "apiVersion": "v1",
     "internal": false,
     "configurationType": "GLOBAL",
@@ -15,6 +15,7 @@
         ],
         "allowMultipleInstances": true
     },
+    "icon48": "https://storage.googleapis.com/static.slingrs.io/platform/endpoints/pandadoc.png",
     "configurationHelpUrl": "/endpoints_pipeline.html#configuration",
     "status": "ACTIVE",
     "stores": [],
