@@ -15,7 +15,6 @@
         ],
         "allowMultipleInstances": true
     },
-    "icon48": "https://storage.googleapis.com/static.slingrs.io/platform/endpoints/pandadoc.png",
     "configurationHelpUrl": "/endpoints_pipeline.html#configuration",
     "status": "ACTIVE",
     "stores": [],
