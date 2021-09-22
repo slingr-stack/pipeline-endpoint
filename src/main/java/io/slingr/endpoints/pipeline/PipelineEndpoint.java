@@ -66,9 +66,7 @@ public class PipelineEndpoint extends HttpEndpoint {
     @EndpointWebService(path = "/", methods = RestMethod.POST)
     public String webhookProcessor(WebServiceRequest request){
         Json body = request.getJsonBody();
-        for (Json event : body.jsons()) {
-            events().send("webhook", event);
-        }
+            events().send("webhook", body);
         return "ok";
     }
 
