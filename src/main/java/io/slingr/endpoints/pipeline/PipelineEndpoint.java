@@ -53,6 +53,15 @@ public class PipelineEndpoint extends HttpEndpoint {
         body.set("path", path);
         return defaultGetRequest(request);
     }
+
+    @EndpointFunction(name = "_rawget")
+    public Json rawget(FunctionRequest request) {
+        Json body = request.getJsonParams();
+        String path = body.string("path");
+        path = path + "&api_key=" + apiKey + "&app_key=" + appKey;
+        body.set("path", path);
+        return defaultGetRequest(request);
+    }
     
     @EndpointFunction(name = "_post")
     public Json post(FunctionRequest request) {
